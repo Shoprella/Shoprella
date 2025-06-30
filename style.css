@@ -1,0 +1,489 @@
+/* Container Setup */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background-color: #90a8a8;
+  max-width: 100vw;
+
+  /*background-image: url('sky.png');*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Optional: makes it stay fixed when scrolling */
+  background-position: center;
+}
+
+body {
+  background-color : #002c2f;
+ /* background-image: url('Blue.png');*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Optional: makes it stay fixed when scrolling */
+  background-position: center;
+
+
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Circle Logo */
+.circle-image {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.circle-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Shop Name */
+.name {
+  margin-left: 50px;
+  flex-shrink: 0;
+}
+
+.name h1 {
+  font-size: 3rem;
+  /*color: #333;*/
+  color:  #1C1C1C;
+  margin: 0px;
+  margin-bottom:10px;
+}
+
+/* Welcome Text Content */
+
+.content h2 {
+  font-size: 1rem;
+ /* color: #555;*/
+  color :  #2F4F4F;
+
+  margin: 0;
+}
+
+.content p {
+  font-size: 1rem;
+ /* color: #777; */
+  color :  #3E4C42
+
+;
+  margin: 5px 0 0 0;
+}
+
+
+
+ /* Navigation Bar */
+
+nav {
+  background-color: #3e454c;
+    /*  background-image: url('nav.png'); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Optional: makes it stay fixed when scrolling */
+  background-position: center;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+
+    nav ul {
+      display: flex;
+      padding: 10px;
+      margin: 0;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin-right: 20px;
+      flex: 0 0 auto; /* prevents shrinking */
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      padding: 8px 12px;
+      color: #333;
+      background-color: #e0e0e0;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      display: inline-block;
+    }
+
+    nav ul li a:hover {
+      background-color: #007BFF;
+      color: white;
+    }
+    nav::-webkit-scrollbar {
+      height: 4px;
+    }
+
+    nav::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    nav::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 10px;
+    }
+
+    nav::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+
+
+
+
+/* Recently Added Section 
+
+    
+.recent-section {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align : center;
+}
+
+
+.recent-section h2 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+
+.recent-items {
+  display: flex;
+  flex-wrap: wrap;        
+  gap: 15px;              
+  justify-content: center;  
+  padding: 10px;
+}
+
+
+.recent-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 200px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  text-align: center;
+}
+
+
+.recent-item:hover {
+  transform: scale(1.03);
+}
+
+
+.recent-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+
+.recent-item strong {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 1px;
+  color: #222;
+}
+
+.recent-item span {
+  display: block;
+  margin-bottom: 1px;
+  color: #555;
+}
+
+
+.recent-item a {
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 1px;
+}
+
+.recent-item a:hover {
+  text-decoration: underline;
+}
+
+*/
+
+/* Products Display Section */
+
+.recent-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  margin-top:10px;
+}
+
+.recent-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  width: 180px;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.recent-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.recent-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.recent-item strong {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+  color: #222;
+}
+
+.recent-item span {
+  display: block;
+  margin-bottom: 4px;
+  color: #555;
+}
+
+.recent-item a {
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 4px;
+}
+
+.recent-item a:hover {
+  text-decoration: underline;
+}
+
+/* Heading for the page */
+#page-title {
+  text-align: center;
+  margin: 20px;
+  font-size: 1.8rem;
+  color: #faf6f6;
+}
+
+/* Sub Navigation (with horizontal scroll like main nav) */
+.sub-nav {
+ /* background-image: url('nav.png');*/
+  background-color: #3e454c;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Optional: makes it stay fixed when scrolling */
+  background-position: center;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+.sub-nav a {
+  text-decoration: none;
+  background-color: #d5d5d5;
+  padding: 6px 12px;
+  border-radius: 4px;
+  color: #333;
+  transition: background-color 0.3s;
+  display: inline-block; /* Important for nowrap behavior */
+  margin-right: 10px;    /* Add spacing between items */
+}
+
+.sub-nav a:hover {
+  background-color: #007BFF;
+  color: white;
+}
+
+/* Scrollbar styling */
+.sub-nav::-webkit-scrollbar {
+  height: 4px;
+}
+
+.sub-nav::-webkit-scrollbar-track {
+  background: #eaeaea;
+}
+
+.sub-nav::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+.sub-nav::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+
+/* ---------- Responsive Design ---------- */
+
+/* Tablet View */
+@media (max-width: 930px) {
+  /* Top Container */
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .name {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
+  .name h1 {
+    font-size: 2.5rem;
+  }
+
+  .content h2 {
+    font-size: 1.1rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
+
+  /* Nav */
+
+  nav {
+      
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+
+  nav ul {
+
+    flex-wrap: nowrap;
+    gap: 10px;
+    
+  }
+
+  nav ul li {
+    margin-right: 0;
+  }
+
+  /* Product Item */
+  .recent-item {
+    width: 150px;
+  }
+}
+
+
+/* Mobile View */
+@media (max-width: 600px) {
+  /* Top Container */
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+
+
+  .circle-image {
+    width: 50px;
+    height: 50px;
+    margin-bottom:0px;
+    padding-bottom:0px;
+  }
+
+  .name h1 {
+    font-size: 1.5rem;
+    margin-top:0px;
+    padding-top:0px;
+  }
+
+  .content h2 {
+    font-size: 0.8rem;
+  }
+
+  .content p {
+    font-size: 0.8rem;
+  }
+
+  /* Nav */
+  nav ul {
+    flex-wrap: nowrap;
+    padding:8px;
+    gap: 4px;
+  }
+
+  nav ul li {
+    margin-right: 6px;
+  }
+
+  nav ul li a {
+    font-size: 0.9rem;
+    padding: 2px 5px;
+  }
+
+  .sub-nav{
+    justify-content:left;
+    padding: 8px;
+  }
+  /* Sub Nav */
+  .sub-nav a {
+    font-size: 0.8rem;
+    padding:4px;
+    gap: 4px;
+  }
+
+  /* Products - Minimum 3 per row */
+  .recent-items {
+    display: flex;
+  flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .recent-item {
+    flex: 0 0 48%;  /* Takes roughly half width with gap */
+  padding: 8px;
+  box-sizing: border-box;
+  }
+
+  .recent-item img {
+    height: 100px;
+  }
+
+  .recent-item strong {
+    font-size: 0.8rem;
+  }
+
+  .recent-item span {
+    font-size: 0.8rem;
+  }
+
+  .recent-item a {
+    font-size: 0.8rem;
+  }
+
+  #page-title {
+  text-align: center;
+  margin: 10px;
+  font-size: 1.2rem;
+  color: white;
+  }
+}
